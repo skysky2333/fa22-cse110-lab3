@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+    Pomodoro Timer First Brainstorm
+  </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="DOES_NOT_EXIST.css">
+</head>
+<body>
+  <header>
+    <h1>Pomodoro Timer First Brainstorm</h1>
+    <nav>
+      <a id ='logo' href="index.html">
+        Pomodoro
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Brainstorming Detail</a></li>
+        <li><a href="">Check-ins Detail</a></li>
+        <li><a href="">Documentation Detail</a></li>
+      </ul>
+    </nav>
+    <p>Date: Oct. 7, 2022</p>
+    
+  </header>
+
+  <section>
+    <h2>Meeting Description</h2>
+    <div>
+      <h3>Agenda</h3>
+      <p>
+        This meeting we will discuss <em>initial ideas</em> on the development of pomodoro timer.
+      </p>
+    </div>
+    <div>
+      <h3>From Last Meeting</h3>
+      <p>
+        To finalize <strong>roles</strong> for individual group members (with 2 dropings). Finalize weekly meeting time.
+        Is <b>Friday afternoon</b> ok for everyone?
+      </p>
+      <h3>New This Meeting</h3>
+      <p>
+        Brianstorming sections on the general UI layout, functionality, and developing platform for the timer.
+      </p>
+      <p>comments / questions / concerns: TO BE FILLED</p>
+      
+    </div>
+
+  </section>
+
+  <Main>
+    <div>
+      <h2>Check-ins</h2>
+      <h3>Attendance <span>List</span></h3>
+      <ol>
+        <li>Name 1</li>
+        <li>Name 2</li>
+        <li>Name 3</li>
+        <li>Name 4</li>
+      </ol>
+      <p>Should Attend: <i>4</i></p>
+      <p>Did Attend: <i>4</i></p>
+    </div>
+    <div>
+      <h2>Brainstorming</h2>
+      <details>
+        <summary>The UI Layout</summary>
+        <ul>
+          <li>
+            We want to reference the current desing (see document section)
+          </li>
+          <li>
+            Some potential improvements include performance boost, and parents/ children control.
+          </li>
+        </ul>
+      </details>
+    </div>
+    <div>
+      <h2>Documentation</h2>
+      <h3>Diagram Reference of the purposed Promodoro UI</h3>
+      <img src="media/proxy-image.png" alt="Promodoro Reference">
+      <h3>Meeting recordings</h3>
+      <audio controls>
+        <source src="media/au.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <video controls>
+        <source src="media/vi.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </Main>
+
+  <h2>Contact Us</h2>
+  <fieldset>
+    <legend>Contact Us:</legend>
+    <form action="#" method="post">
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+      <input type="email" name="email" id="email" placeholder="Your Email" required>
+      <br>
+            
+      <label for="school">Choose ur school:</label>
+      <input list="schools" id="school" name="school">
+      
+      <datalist id="schools">
+          <option value="UCSD">
+          <option value="Others">
+      </datalist>
+      <br>
+      
+      <textarea name="msg" placeholder="Your Message" id="msg"></textarea>
+      <br>
+      <select name="about" id="about">
+        <option value="" disabled selected>What About:</option>
+        <optgroup label="New features">
+          <option>Add new features</option>
+          <option>Remove features</option>
+        </optgroup>
+        <optgroup label="Bug fix">
+          <option>UI bug</option>
+        </optgroup>
+      </select>
+
+
+
+      <br>
+      <button type="submit" id="sb">Submit</button>
+    </form>
+  </fieldset>
+
+  <footer>
+    <hr>
+    <p>Pomodoro &copy; 2022</p>
+  </footer>
+</body>
+</html>
