@@ -240,7 +240,7 @@ div.flex_box {
   flex-direction:column;
   flex-wrap:wrap;
   flex-basis: auto;
-  align-items: center;
+  text-align: center;
   margin: 5%;
 }
 
