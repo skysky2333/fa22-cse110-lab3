@@ -18,6 +18,10 @@ html {
   box-shadow: 0px 1.5rem 2rem rgba( 0, 0, 0, 0.2 );
 }
 
+h1, h2{
+  padding: 5% 0%;
+}
+
 h1 {
   text-align: center;
   font-size: 4rem;
@@ -59,7 +63,7 @@ h3 {
   margin-bottom: 2vh;
 }
 
-p {
+p, summary {
   font-size: 1.5rem;
   margin: auto;
   display: block;
@@ -133,13 +137,13 @@ nav a {
   font-size: 1em;
 }
 
-.nav li:hover {
+.nav li[use='link_external_site']:hover {
   background-color: rgb(97, 124, 107);
   border-radius: 1em;
   transition: 0.75s ease;
 }
 
-.nav li {
+.nav li[use='link_external_site'] {
   padding: 0.2em 1em;
   flex: 1;
 }
@@ -151,7 +155,7 @@ fieldset{
   border-color:rgb(182, 121, 179);
   border-width:0.5vh;
   border-radius:10em;
-  margin:2vh 20vw;
+  margin:4vh 20vw;
 }
 
 form {
@@ -190,7 +194,19 @@ textarea {
 /* styling / emphasize check list */
 
 #checkin_list *{
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+main li {
   text-decoration: underline;
+}
+main li ~ li{
+  text-decoration: underline;
+}
+
+main li + li{
+font-size: 1rem;
 }
 
 /* styling just to test the display=none atribute */
@@ -202,20 +218,30 @@ textarea {
 
 /* styling the flexbox */
 
-.hori_3 {
+div.hori_3 {
   display: grid;
   grid-gap: 10%;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
   align-items: center;
   margin: 5%;
 }
 
-.hori_3 div {
+div.hori_3 > div {
   text-align: center;
 }
 
-.hori_3 p {
+div.hori_3 > p {
   text-align: justify;
+}
+
+div.flex_box {
+  display: flexbox;
+  flex-direction:column;
+  flex-wrap:wrap;
+  flex-basis: auto;
+  align-items: center;
+  margin: 5%;
 }
 
 @media screen and (max-width: 1000px)
