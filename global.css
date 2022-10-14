@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+
+/* setting up some universal settings */
+html {
+  background: #e9e9e9;
+  font-family: 'Montserrat', sans-serif;
+  position:relative;
+}
+
+.space {
+  padding: 0% 15%;
+  margin: 10% 0%;
+}
+
+.shadow {
+  box-shadow: 0px 1.5rem 2rem rgba( 0, 0, 0, 0.2 );
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 3% 3% 0% 0%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#date {
+  text-align: right;
+  margin: 0% 10%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #000000;
+  font-size:3rem;
+  font-weight: bold;
+  margin: 2%;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  
+}
+
+h3 {
+  text-align: center;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+.dark_bg {
+  background: rgb(204, 109, 71);
+  color: #f4f4f4;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.dark_bg *{
+  color: #f4f4f4;
+}
+
+/* this is created just to use active pseudo class */
+
+h2:active {
+  background-color: yellow;
+}
+
+
+/* setting up footer */
+
+footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width: 100vw;
+  background-color: rgb(199, 140, 130);
+  height: 3rem;
+}
+
+footer p{
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+
+/* setting up navigation bar */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: rgb(204, 109, 71);
+}
+
+
+nav a {
+  color: white;
+}
+
+#logo {
+  font-size: 30pt;
+  margin-left: 1em;
+}
+
+.nav {
+  display: flex;
+  gap: 1em;
+  font-size: 1em;
+}
+
+.nav li:hover {
+  background-color: rgb(97, 124, 107);
+  border-radius: 1em;
+  transition: 0.75s ease;
+}
+
+.nav li {
+  padding: 0.2em 1em;
+  flex: 1;
+}
+
+/* styling the contact form */
+
+fieldset{
+  border-style:dotted;
+  border-color:rgb(182, 121, 179);
+  border-width:0.5vh;
+  border-radius:10em;
+  margin:2vh 20vw;
+}
+
+form {
+  max-width: 600px;
+  min-width: 50px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+form label{
+  font-size: large;
+}
+
+input, textarea, select {
+  border: 0;
+  padding: 1em;
+  width: 80%;
+  margin-top: 1em;
+  resize: none;
+}
+
+textarea {
+  height: 4cm;
+}
+
+#sb {
+  color: #ffffff; 
+  background: rgb(131, 47, 14);
+  cursor: pointer;
+  border:0;
+  width: 80%;
+  margin: 2em;
+  padding: 1em;
+}
+
+/* styling / emphasize check list */
+
+#checkin_list *{
+  text-decoration: underline;
+}
+
+/* styling just to test the display=none atribute */
+
+#hidden {
+  display: none;
+}
+
+
+/* styling the flexbox */
+
+.hori_3 {
+  display: grid;
+  grid-gap: 10%;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin: 5%;
+}
+
+.hori_3 div {
+  text-align: center;
+}
+
+.hori_3 p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 1000px)
+{  
+  .hori_3 {
+    grid-template-columns: 1fr;
+    height: fit-content;
+    overflow: auto;
+  }
+}
