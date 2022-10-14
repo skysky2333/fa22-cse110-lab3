@@ -5,27 +5,47 @@
     Pomodoro Timer First Brainstorm
   </title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="DOES_NOT_EXIST.css">
+  <link rel="stylesheet" href="global.css">
+  <style>
+    /* reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    li {
+      list-style: none;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Pomodoro Timer First Brainstorm</h1>
     <nav>
       <a id ='logo' href="index.html">
         Pomodoro
       </a>
-      <ul>
+      <ul class="nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="">Brainstorming Detail</a></li>
-        <li><a href="">Check-ins Detail</a></li>
-        <li><a href="">Documentation Detail</a></li>
+        <li><a href="">Brainstorming</a></li>
+        <li><a href="">Checkins</a></li>
+        <li><a href="">Documentation</a></li>
       </ul>
     </nav>
-    <p>Date: Oct. 7, 2022</p>
+
+    <h1 style="color: rgb(214, 82, 82);">Pomodoro Timer First Brainstorm</h1>
+
+    <p id="date">Date: Oct. 7, 2022</p>
     
   </header>
 
-  <section>
+  <p id="hidden">This is HIDDEN</p>
+
+  <section class="space">
     <h2>Meeting Description</h2>
     <div>
       <h3>Agenda</h3>
@@ -49,11 +69,11 @@
 
   </section>
 
-  <Main>
+  <Main class="space dark_bg">
     <div>
       <h2>Check-ins</h2>
       <h3>Attendance <span>List</span></h3>
-      <ol>
+      <ol id="checkin_list">
         <li>Name 1</li>
         <li>Name 2</li>
         <li>Name 3</li>
@@ -79,17 +99,28 @@
     <div>
       <h2>Documentation</h2>
       <h3>Diagram Reference of the purposed Promodoro UI</h3>
-      <img src="media/proxy-image.png" alt="Promodoro Reference">
+      <div class="hori_3">
+        <img class="shadow" src="media/proxy-image.png" alt="Promodoro Reference1">
+        <img class="shadow" src="media/proxy-image.png" alt="Promodoro Reference2">
+        <img class="shadow" src="media/proxy-image.png" alt="Promodoro Reference3">
+      </div>
       <h3>Meeting recordings</h3>
-      <audio controls>
+      <div class="hori_3">
+      <audio class="shadow" controls>
         <source src="media/au.mp3" type="audio/mpeg">
         Your browser does not support the audio tag.
       </audio>
-      <video controls>
+      <video class="shadow" controls>
         <source src="media/vi.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+      <video class="shadow" controls>
+        <source src="media/vi.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </div>
+      </video>
     </div>
+  </div>
   </Main>
 
   <h2>Contact Us</h2>
@@ -101,6 +132,7 @@
       <br>
             
       <label for="school">Choose ur school:</label>
+      <br>
       <input list="schools" id="school" name="school">
       
       <datalist id="schools">
